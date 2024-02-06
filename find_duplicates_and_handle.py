@@ -36,10 +36,9 @@ def main():
     # Find duplicates
     duplicates = find_duplicates(root_folder)
 
-    # Move duplicate files to 'duplicates' folder and prompt for deletion
+    # Move all duplicate files to 'duplicates' folder
     for files in duplicates.values():
         if len(files) > 1:
-            print(f"Duplicate files found: {files}")
             for file_path in files[1:]:
                 shutil.move(file_path, duplicates_folder)
                 print(f"Moved {file_path} to duplicates folder")
@@ -52,8 +51,4 @@ def main():
                 for file_path in files[1:]:
                     os.remove(file_path)
                     print(f"Deleted {file_path}")
-    else:
-        print("Duplicate files were moved to 'duplicates' folder. They were not deleted.")
-
-if __name__ == "__main__":
-    main()
+   
