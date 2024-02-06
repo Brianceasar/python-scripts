@@ -18,9 +18,7 @@ This repository is a curated collection of Python scripts developed to simplify 
 
 Here's a brief overview of the scripts available in this repository:
 
-- `script1.py`: Description of what the script does.
-- `script2.py`: Description of what the script does.
-- ...
+- `find_duplicates_and_handle.py`: This script identifies duplicate files within a specified directory and its subdirectories, moves them to a designated folder, and provides options for permanent deletion.
 
 Feel free to explore the repository to discover more scripts and their functionalities.
 
