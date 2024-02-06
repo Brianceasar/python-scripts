@@ -51,4 +51,8 @@ def main():
                 for file_path in files[1:]:
                     os.remove(file_path)
                     print(f"Deleted {file_path}")
-   
+    else:
+        print("Duplicate files were moved to 'duplicates' folder. They were not deleted.")
+
+if __name__ == "__main__":
+    main()
