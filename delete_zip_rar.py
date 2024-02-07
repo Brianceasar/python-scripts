@@ -16,3 +16,15 @@ def delete_zip_rar_files(root_folder):
     except Exception as e:
         print(f"An error occurred during deletion: {e}")
 
+def main():
+    root_folder = input("Enter the path to the folder to search for .zip and .rar files: ").strip()
+
+    # Confirm with the user before proceeding with deletion
+    confirm_deletion = input(f"WARNING: This action is irreversible and may result in permanent loss of files.\nAre you sure you want to delete .zip and .rar files in {root_folder}? (yes/no): ").strip().lower()
+    if confirm_deletion == "yes":
+        delete_zip_rar_files(root_folder)
+    else:
+        print("Deletion aborted.")
+
+if __name__ == "__main__":
+    main()
