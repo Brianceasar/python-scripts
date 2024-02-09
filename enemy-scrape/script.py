@@ -1,6 +1,6 @@
+import csv
 import requests
 from bs4 import BeautifulSoup
-import csv
 import time
 
 def scrape_competitor_website(url, max_retries=3):
